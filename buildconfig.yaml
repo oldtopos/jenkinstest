@@ -1,0 +1,4 @@
+---
+buildConfig:
+  buildFlags:
+    perform_cleanup: false
