@@ -4,10 +4,7 @@
 name: Python application
 
 on:
-  push:
-    branches: [ $default-branch ]
-  pull_request:
-    branches: [ $default-branch ]
+  [ push, pull_request ]
 
 permissions:
   contents: read
@@ -15,7 +12,7 @@ permissions:
 jobs:
   build:
 
-    runs-on: [self-hosted, Linux, X64, gpu]
+    runs-on: self-hosted
 
     steps:
     - uses: actions/checkout@v3
