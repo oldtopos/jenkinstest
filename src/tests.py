@@ -1,4 +1,4 @@
 import pytest
 
-def test_workflow:
+def test_workflow():
     assert True
